@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleAdvanced.css">
+    <title>Advanced Search</title>
+</head>
+<body>
+    <section id="container">
+        <img src="googlelogo.png" width="74px" height="24px" alt="google logo">
+        <div id="menu">
+            <ul >
+            <li><a href="index.html">Google Search</a></li>
+            <li><a href="imageSearch.html">Image Search</a></li>
+        </ul>
+    </div>
+
+    <h2>Advanced Search</h2>
+    <div class="breakLine"></div>
+
+    <div id="content">
+        <h3>Find pages with...</h3>
+        <form action="https://google.com/search">
+            <div id="queryContainer">
+                <div id="labels">
+                    <label for="allTheseWords">all these words: </label>
+                    </div>
+                <div id="queryFilds">
+                    <input id="allTheseWords" class="inputQuery" name="as_q" type="text"> 
+                </div>
+            </div>
+            
+            <div id="queryContainer">
+                <div id="labels">
+                    <label for="thisExactWord">this exact word or phrase: </label>
+                </div>
+                <div id="queryFilds">
+                    <input id="thisExactWord" class="inputQuery" name="as_epq" type="text">
+                </div>
+            </div>
+
+            <div id="queryContainer">
+                <div id="labels">
+                    <label for="anyTheseWords">any of these words: </label>
+                </div>
+
+                <div id="queryFilds">
+                    <input id="anyTheseWords" class="inputQuery" name="as_oq" type="text">
+                </div>
+            </div>
+
+            <div id="queryContainer">
+                <div id="labels">
+                    <label for="noneTheseWords">none of these words: </label>
+                </div>
+                <div id="queryFilds">
+                    <input id="noneTheseWords" class="inputQuery" name="as_eq" type="text">
+                </div>
+            </div>
+            <div id="submitButton">
+                <input id="submit" type="submit" value="Advanced Search">
+            </div>
+            
+        </form>
+    </div>
+</section>
+</body>
+</html>
